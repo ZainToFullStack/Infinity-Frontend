@@ -1,0 +1,52 @@
+/* Namespaced CSS to prevent conflicts */
+.logoSection {
+    background-color: #f3f4f6;
+    /* light gray */
+    padding: 50px 20px;
+}
+
+.logoCard {
+    background-color: transparent;
+    /* border: 1px solid #e5e7eb; */
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.logoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.logoImg {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logoCard:hover .logoImg {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .logoSection {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoSection {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoSection {
+        padding: 30px 15px;
+    }
+}

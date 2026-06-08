@@ -1,0 +1,70 @@
+.sec1_projects-section {
+    position: relative;
+    height: 12rem;
+    background-image: url("../../assets/aboutbg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+
+.sec1_projects-section .sec1_projects-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.sec1_projects-section .sec1_projects-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.sec1_projects-section .sec1_projects-title {
+    color: white;
+    font-weight: 800;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    position: absolute;
+    top: 0px;
+}
+
+/* Responsive container widths */
+@media (min-width: 640px) {
+    .sec1_projects-section .sec1_projects-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sec1_projects-section .sec1_projects-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sec1_projects-section .sec1_projects-container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sec1_projects-section .sec1_projects-container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .sec1_projects-section .sec1_projects-container {
+        max-width: 1536px;
+    }
+}

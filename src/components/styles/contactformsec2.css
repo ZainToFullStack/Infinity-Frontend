@@ -1,0 +1,188 @@
+.sec2_contact {
+    padding: 80px 20px;
+    background: white;
+    font-family: Inter, sans-serif;
+}
+
+.sec2_contact .sec2_contact_container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* CONTACT CARDS */
+
+.sec2_contact .sec2_contact_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.sec2_contact .sec2_contact_card {
+    border: 1px solid #6B8F56;
+    padding: 40px 30px;
+    text-align: center;
+    background: white;
+    transition: 0.3s;
+}
+
+.sec2_contact .sec2_contact_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.sec2_contact .sec2_contact_icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #6B8F56;
+}
+
+.sec2_contact .sec2_contact_card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #6B8F56;
+    font-weight: 700;
+}
+
+.sec2_contact .sec2_contact_card p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #6B8F56;
+}
+
+
+
+/* FORM WRAPPER */
+
+.sec2_contact .sec2_contact_wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 1px solid #6B8F56;
+}
+
+
+
+/* MAP */
+
+.sec2_contact .sec2_contact_map {
+    min-height: 450px;
+}
+
+.sec2_contact .sec2_contact_map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* FORM BOX */
+
+.sec2_contact .sec2_contact_form_box {
+    padding: 60px;
+    background: white;
+    border-left: 6px solid #6B8F56;
+}
+
+.sec2_contact .sec2_contact_heading {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: #6B8F56;
+}
+
+
+
+/* FORM */
+
+.sec2_contact .sec2_contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.sec2_contact input,
+.sec2_contact textarea {
+    width: 100%;
+    border: 1px solid #6B8F56;
+    padding: 14px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.sec2_contact textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.sec2_contact input:focus,
+.sec2_contact textarea:focus {
+    box-shadow: 0 0 0 2px rgba(107, 143, 86, 0.2);
+}
+
+
+
+/* BUTTON */
+
+.sec2_contact button {
+    background: #6B8F56;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec2_contact button:hover {
+    opacity: 0.85;
+}
+
+
+
+/* TABLET */
+
+@media(max-width:992px) {
+
+    .sec2_contact .sec2_contact_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .sec2_contact .sec2_contact_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .sec2_contact .sec2_contact_map {
+        height: 350px;
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    .sec2_contact {
+        padding: 60px 15px;
+    }
+
+    .sec2_contact .sec2_contact_form_box {
+        padding: 35px;
+    }
+
+    .sec2_contact .sec2_contact_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sec2_contact .sec2_contact_heading {
+        font-size: 26px;
+    }
+
+}

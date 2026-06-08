@@ -1,0 +1,165 @@
+.features-section {
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 200px; /* Default for desktops */
+    text-align: center;
+}
+
+/* Title wrapper */
+.features-section .features-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.features-section .features-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+}
+
+.features-section .line {
+    width: 60px;
+    height: 2px;
+    background-color: #729A57; /* brand color */
+}
+
+/* Subtitle */
+.features-section .features-subtitle {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Grid */
+.features-section .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 50px;
+}
+
+/* Card */
+.features-section .feature-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: subtle lift and shadow */
+/* .features-section .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+} */
+
+/* Icon */
+.features-section .feature-card .icon {
+    font-size: 36px;
+    color: #729A57; /* brand color */
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Heading */
+.features-section .feature-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    transition: all 0.56s ease-in-out;
+}
+
+/* Hover Effects */
+.features-section .feature-card:hover .icon {
+    color: #555555;
+}
+
+.features-section .feature-card:hover h3 {
+    color: #729A57; /* brand color on hover */
+}
+
+/* Description */
+.features-section .feature-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Divider */
+.features-section .divider {
+    width: 50px;
+    height: 1px;
+    background-color: #729A57; /* brand color */
+    margin: 24px auto 0;
+}
+
+/* ================== Responsive ================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+    .features-section {
+        padding: 50px 100px; /* reduce padding */
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .features-section {
+        padding: 50px 60px;
+    }
+
+    .features-section .features-title {
+        font-size: 28px;
+    }
+
+    .features-section .features-subtitle {
+        font-size: 14px;
+    }
+
+    .features-section .features-grid {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 40px 20px;
+    }
+
+    .features-section .features-title {
+        font-size: 24px;
+    }
+
+    .features-section .features-subtitle {
+        font-size: 13px;
+    }
+
+    .features-section .features-grid {
+        gap: 20px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .features-section {
+        padding: 30px 15px;
+    }
+
+    .features-section .features-title {
+        font-size: 20px;
+    }
+
+    .features-section .features-subtitle {
+        font-size: 12px;
+    }
+
+    .features-section .features-grid {
+        gap: 15px;
+    }
+}

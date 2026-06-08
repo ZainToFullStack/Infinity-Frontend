@@ -1,0 +1,244 @@
+/* =====================================================
+   ROOT – visual comfort & readable spacing
+===================================================== */
+.works-section {
+    /* width: 100%; */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 7rem;
+    text-align: center;
+    border: 2px solid transparent;
+    /* background-col   or: rgba(205, 205, 205, 0.348); */
+    height: 100%;
+}
+
+/* =====================================================
+   HEADER – strong hierarchy & symmetry
+===================================================== */
+.works-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.works-header .line {
+    width: 4.5rem;
+    border-top: 2px solid #799F4F;
+}
+
+.works-header h2 {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #799F4F;
+}
+
+.works-intro {
+    max-width: 52rem;
+    margin: 0 auto 3.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+/* =====================================================
+   SWIPER – alignment & balance
+===================================================== */
+.works-section .swiper {
+    padding-bottom: 3rem;
+}
+
+.works-section .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* =====================================================
+   CARD – consistent size, low cognitive load
+===================================================== */
+.single-card {
+    width: 360px;
+    height: 460px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 6px solid #799F4F;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    /* border: .5px solid black; */
+}
+
+.single-card:hover {
+    /* transform: translateY(-6px); */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.18);
+    border-bottom-color: #3A7399;
+}
+
+/* =====================================================
+   IMAGE – visual attraction without distraction
+===================================================== */
+.card-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.service_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.single-card:hover .service_img img {
+    transform: scale(1.12);
+}
+
+/* =====================================================
+   CARD CONTENT – scan-friendly & balanced
+===================================================== */
+.card-text {
+    position: relative;
+    flex: 1;
+    padding: 2.8rem 1.2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* =====================================================
+   ICON – clear affordance (Fitts’s Law)
+===================================================== */
+.icon-circle {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    background: #799F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.45rem;
+    color: #fff;
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.single-card:hover .icon-circle {
+    background: #3A7399;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================================================
+   TEXT – hierarchy + readability
+===================================================== */
+.card-text h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.4rem;
+}
+
+.card-text p {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #6b7280;
+    margin-bottom: 1rem;
+
+    /* 3-line clamp (reduces cognitive overload) */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* =====================================================
+   DIVIDER – subtle grouping (Gestalt)
+===================================================== */
+.border-turquoise {
+    width: 5rem;
+    margin: 0.5rem auto;
+    border-top: 2px solid #799F4F;
+    transition: border-color 0.3s ease;
+}
+
+.single-card:hover .border-turquoise {
+    border-top-color: #3A7399;
+}
+
+/* =====================================================
+CTA – clear, non-aggressive action
+===================================================== */
+.text-turquoise {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+    width: 150px;
+    background-color: #799F4F;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+
+.single-card:hover .text-turquoise {
+    background-color: #3A7399;
+}
+
+.text-turquoise:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE – comfort over density
+===================================================== */
+@media (max-width: 1024px) {
+    .single-card {
+        width: 330px;
+        height: 440px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-card {
+        width: 310px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .single-card:hover {
+        transform: none;
+        /* reduce motion for touch comfort */
+    }
+}
+
+@media (max-width: 426px) {
+    .works-section {
+        padding: 3rem .5rem;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .works-header h2 {
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+        font-weight: 800;
+        color: #799F4F;
+    }
+
+}

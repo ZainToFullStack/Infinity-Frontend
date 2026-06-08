@@ -1,0 +1,137 @@
+.success-section {
+    background: linear-gradient(rgba(114, 154, 87, 0.88),
+            rgba(114, 154, 87, 0.88)),
+        url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1740&q=80");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    color: white;
+}
+
+/* Container */
+.success-section .container {
+    max-width: 1200px;
+    /* height: 80vh; */
+    margin: auto;
+}
+
+/* Header */
+.success-section .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.success-section .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.success-section .divider {
+    height: 1px;
+    width: 80px;
+    background: white;
+}
+
+/* Subtitle */
+.success-section .subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Grid */
+.success-section .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Card */
+.success-section .stat-card {
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    /* slight dark overlay for readability */
+    padding: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.success-section .stat-card:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Counter Number */
+.success-section .stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Divider inside Card */
+.success-section .stat-card hr {
+    width: 60px;
+    margin: 0.75rem auto;
+    border: none;
+    height: 2px;
+    background: #729A57;
+    /* brand color */
+}
+
+/* Card Title */
+.success-section .stat-card h4 {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+/* Description Preview */
+.success-section .stat-card p {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-height: 5.6rem;
+    /* approx 4 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.5s ease;
+}
+
+/* Show full description on hover */
+.success-section .stat-card:hover p {
+    max-height: 500px;
+    /* enough to show full text */
+}
+
+/* Read More Button */
+.success-section .stat-card .read-more {
+    display: none;
+    margin-top: 1rem;
+    background: #729A57;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.success-section .stat-card:hover .read-more {
+    display: inline-block;
+}
+
+.success-section .stat-card .read-more:hover {
+    background: #5a7c45;
+    /* slightly darker on hover */
+}
